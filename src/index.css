@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  box-sizing: inherit;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+}
+.main__container {
+  box-shadow: 0 0 2rem hsl(217, 19%, 14%);
+  @apply text-center w-[90vw] sm:w-[40rem] md:w-[50rem] px-10 md:px-14 lg:px-20 py-16 md:py-20 lg:py-24 rounded-xl bg-dark-grayish-blue relative z-10;
+}
+.main__container::before {
+  content: "";
+  @apply bg-[url("./images/pattern-divider-mobile.svg")] md:bg-[url("./images/pattern-divider-desktop.svg")] bg-no-repeat bg-cover bg-center absolute bottom-32 left-1/2 translate-x-[-50%] translate-y-2/4 w-[85%] h-8;
+}
+.advice__num {
+  @apply text-neon-green text-lg md:text-xl lg:text-2xl uppercase tracking-[3px] font-normal mb-8;
+}
+.advice__info {
+  @apply text-[2.4rem] lg:text-[2.8rem] text-light-cyan font-bold mb-32;
+}
+.btn__dice {
+  @apply absolute left-1/2 bottom-[-6.5rem] translate-x-[-50%] translate-y-[-50%] p-8 bg-neon-green rounded-full;
+}
+.btn__dice:hover {
+  box-shadow: 0 0 2rem hsl(150, 100%, 76%);
+  transition: all 300ms;
+}
