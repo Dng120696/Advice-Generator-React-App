@@ -11,8 +11,8 @@ export default {
         "dark-blue": "hsl(218, 23%, 16%)",
       },
       backgroundImage: {
-        "mobile-img": "url('/images/pattern-divider-mobile.svg')",
-        "desktop-img": "url('/images/pattern-divider-desktop.png')",
+        "mobile-img": "url('./assets/pattern-divider-mobile.svg')",
+        "desktop-img": "url('./assets/pattern-divider-desktop.svg')",
       },
     },
   },
